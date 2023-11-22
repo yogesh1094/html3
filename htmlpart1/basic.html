@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Basics of html</title>
+</head>
+<style>
+    ul {
+        list-style-type: none; 
+        margin: 0px;
+        padding: 25px;
+        overflow: hidden;
+        background-color: rgb(255, 137, 3);
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    figure {
+        padding: 0px;
+        margin: 5px;
+    }
+    aside {
+        width: 20%;
+        padding: 20px;
+        margin-left: 35px;
+        margin-right: 20px;
+        float: right;
+        background-color: rgb(221, 245, 84);
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="basic.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav><br><br>
+    </header>
+    <main>
+            <form action="home.html">
+                <h1>Student Form:</h1>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="pass" name="password" required><br><br>
+                <input type="submit" value="Submit">
+            </form><br>
+            <iframe src="./images/dog.jpg" width="80%" height="500" style="border:1px solid black;">
+            </iframe><br><br>
+            <details>
+                <summary>Click to read more:</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, fugiat adipisci. Unde facilis nam doloribus ducimus commodi quos natus quas magnam placeat sit! Distinctio quis suscipit voluptatum repellat natus aut doloribus facilis rerum. Modi, at adipisci dolor ipsum libero aliquid voluptatum provident molestiae, enim atque voluptates, totam esse? Quisquam, nisi.</p>
+            </details><br><br>
+            <img src="./images/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+            <map name="workmap">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+              <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="mug.html">
+            </map>
+            <figure>
+                <img src="./images/beagle-hound-dog.webp" alt="beagle-hound-dog" width="500px">
+                <figcaption>Fig.1 - Breed - Beagle. Height - 13-16 in (33-41 cm)</figcaption>
+            </figure>
+            <section>
+                <h1>The Beagle Blog</h1>
+                <p>The beagle is a breed of small scent hound, similar in appearance to the much 
+                larger foxhound. The beagle was developed primarily for hunting hare, known as 
+                beagling.Possessing a great sense of smell and superior tracking instincts,the
+                beagle is the primary breed used as a detection dog for prohibited agricultural
+                imports and foodstuffs in quarantine around the world.The beagle is a popular 
+                pet due to its size, good temper, and a lack of inherited health problems.</p>
+            </section>
+            <aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi cum voluptates earum accusantium debitis ipsum maiores officiis possimus accusamus corrupti officia quos facere, dolorem perspiciatis cupiditate unde doloremque ab nostrum.
+            </aside>
+            <dl>
+                <dt><strong>Tea</strong></dt>
+                <dd>Green Tea</dd>
+                <dd>Lemon Tea</dd>
+                <dd>Ginger Tea</dd>
+                <dt><strong>Coffee</strong></dt>
+                <dd>Black Coffee</dd>
+                <dd>Cold coffee</dd>
+            </dl>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/chx9Rs41W6g" title="JavaScript |  Beginning to Mastery Complete Tutorial (Part 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
